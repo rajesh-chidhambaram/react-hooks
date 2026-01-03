@@ -25,6 +25,7 @@ function UseInputLab() {
         placeholder="Enter email"
         {...emailInput}
       />
+      <br/>
 
       <h4>Preview:</h4>
       <p>Name: {nameInput.value}</p>
