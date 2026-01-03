@@ -1,0 +1,39 @@
+.app {
+  font-family: sans-serif;
+}
+
+.header {
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+.sidebar {
+  width: 220px;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar button {
+  padding: 6px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  background: #222;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}

@@ -1,0 +1,123 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* ===== Layout ===== */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ===== Header ===== */
+.header {
+  background: #1f2937;
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 240px;
+  background-color: #1f2937; /* dark sidebar */
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 6px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #e5e7eb; /* visible text */
+}
+
+.sidebar button:hover {
+  background-color: #374151;
+}
+
+.sidebar .active {
+  background-color: #374151;
+  color: white;
+}
+
+.sidebar h1 {
+  color: #e5e7eb;
+  font-size: 35px;
+  margin-bottom: 16px;
+}
+
+
+/* ===== Main Panel ===== */
+.main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background-color: #f9fafb;
+}
+
+/* ===== Card Style for Labs ===== */
+.lab-card {
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Inputs ===== */
+input {
+  padding: 8px 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-top: 6px;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 8px 14px;
+  background-color: #374151;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Theme Support ===== */
+.light {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
